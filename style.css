@@ -19,3 +19,22 @@ body{
 img{
     width: 30em;
 }
+
+header{
+
+}
+
+
+#title{
+    font-family: var(--font-header);
+    line-height: 15px;
+}
+
+ul > a{
+    margin: 30px;
+}
+
+h1{
+    line-height: 10px;
+}
+
