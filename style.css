@@ -34,7 +34,12 @@ ul > a{
     margin: 30px;
 }
 
-h1{
-    line-height: 10px;
+.anun{
+    line-height: 5px;
 }
 
+aside{
+    margin: 0px;
+    border: 10px;
+    display: inline-block;
+}
