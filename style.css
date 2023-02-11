@@ -2,44 +2,79 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 
+  @font-face {
+    font-family: 'anime';
+    src: url(fontes/Anime\ Inept.otf) format(opentype);
+  }
+
 :root{
     --cor0: #EE2E31;
     --cor1: #F4C095;
     --cor2: #679289;
     --cor3: #1D7874;
     --cor4: #071E22;
-    --font-header: 'Unbounded', cursive; 
+    --font-normal: 'Unbounded', cursive;
+    --font-anime: 'anime';
 }
 
 
 body{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
+    margin: 20px;
 }
 
 img{
     width: 30em;
+    display: inline-block;
 }
 
-header{
-
+nav{
+    display: inline-block;
+    position: fixed;
+    right: 50px;
 }
 
 
 #title{
-    font-family: var(--font-header);
+    font-family: var(--font-anime);
     line-height: 15px;
+    display: inline-block; 
 }
 
 ul > a{
     margin: 30px;
+    text-decoration: none;
 }
 
 .anun{
     line-height: 5px;
+    font-family: var(--font-normal);
+}
+
+p{
+    display: inline-block;
+    border: 10px;
 }
 
 aside{
     margin: 0px;
     border: 10px;
     display: inline-block;
+}
+
+article{
+    display: inline-block;
+}
+
+form{
+    display: inline-block;
+    background-color: var(--cor4);
+    border-radius: 7px;
+}
+
+input{
+    display: block;
+    margin: 20px;
+    border-radius: 6px;
+    border-style: none;
 }
