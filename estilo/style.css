@@ -8,7 +8,6 @@
   }
 
 :root{
-    --cor0: #EE2E31;
     --cor1: #F4C095;
     --cor2: #679289;
     --cor3: #1D7874;
@@ -22,55 +21,62 @@ body{
     margin: 20px;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+}
+
 img{
-    width: 30em;
-    display: inline-block;
-    margin: 30px; 
+    width: 30em; 
 }
 
 nav{
     display: inline-block;
     right: 100px;
-    margin-left: 457px;
 }
-
 
 #title{
     font-family: var(--font-anime);
     line-height: 15px;
-    display: inline-block; 
+    display: inline-block;
 }
 
-ul > a{
+a{
     margin: 30px;
     text-decoration: none;
-    background-color: #679289;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 6px;
+}
+
+.inscreva-se-bt{
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
 }
 
 a:hover{
     color: var(--cor1);
-    padding: 20px;
+    background-color: var(--cor4);
     border-radius: 20px;
-    background-color: #EE2E31;
+    transition: 0.3s;
+}
+
+#inscreva-se-ti{
+    color: var(--cor1);
 }
 
 .anun{
     line-height: 5px;
+    font-size: 40px;
     font-family: var(--font-normal);
-}
-
-p{
-    display: inline-block;
-    border: 10px;
-    margin-right: 800px;
-}
-
-aside{
-    display: inline-block;
-}
-
-article{
-    display: inline-block;
+    color: #071E22;
 }
 
 form{
@@ -78,11 +84,18 @@ form{
     background-color: var(--cor4);
     border-radius: 7px;
     line-height: 30px;
+    border: 2px solid var(--cor1);
 }
 
 input{
     display: block;
     margin: 20px;
+    border: 2px solid var(--cor3);
     border-radius: 6px;
-    border-style: none;
+}
+
+.enviar:hover{
+    color: #F4C095;
+    background-color: var(--cor3);
+    transition: 0.2s;
 }
