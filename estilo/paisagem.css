@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.anun{
+    line-height: 25px;
+    font-size: 30px;
+}
+
+form{
+    padding: 10px;
+}
+
+input{
+    padding: 4px;
+    margin: 5px;
+}
